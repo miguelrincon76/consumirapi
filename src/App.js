@@ -3,6 +3,7 @@ import "./assets/css/App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
+import Editar from "./components/Editar";
 import Cotizacion from "./components/Cotizacion";
 import EditarCuadroCot from "./components/EditarCuadroCot";
 import Presupuesto from "./components/Presupuesto";
@@ -25,6 +26,11 @@ function App() {
             path="/dashboard"
             exact
             render={(props) => <Dashboard {...props} />}
+          ></Route>
+          <Route
+            path="/editar/:id"
+            exact
+            render={(props) => <Editar {...props} />}
           ></Route>
           <Route
             path="/editarcuadro"
